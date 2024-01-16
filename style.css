@@ -4,6 +4,36 @@
     font-family: 'Mulish', sans-serif;
 }
 
+nav {
+    width: 81.25%;
+    margin: 0 auto;
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 44px;
+}
+
+
+nav ul a {
+    text-decoration: none;
+    color: #424247;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+
+
+
+.hamburger {
+    display: none;
+}
 
 .banner {
     width: 81.25%;
@@ -147,14 +177,16 @@ select {
     text-align: center;
 }
 
-.destination-title {
+.destination-title,
+.choose-title {
     color: #131318;
     margin-bottom: 24px;
     font-size: 2.5rem;
     font-weight: 800;
 }
 
-.destination-des {
+.destination-des,
+.choose-des {
     width: 50%;
     color: rgba(19, 19, 24, 0.70);
     font-size: 1rem;
@@ -188,6 +220,221 @@ select {
     gap: 24px;
 }
 
+/* choose section */
+.choose {
+    width: 81.25%;
+    max-width: 1170px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+
+}
+
+.choose-div {
+    max-width: 573px;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    padding: 2rem 3.5rem 2rem 2rem;
+}
+
+
+
+.choose-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.div-3 {
+    grid-column: 1/-1;
+    margin: 0 auto;
+}
+
+/* deals section */
+.deals {
+    width: 81.25%;
+    max-width: 1170px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.deals>h2,
+.deals>p {
+    text-align: center;
+
+}
+
+.deals>p {
+    margin-top: 24px;
+    margin-bottom: 48px;
+    padding: 0 150px;
+}
+
+.deal {
+    height: 500px;
+    width: 100%;
+
+    position: relative;
+
+    margin-bottom: 24px;
+
+
+}
+
+.deal p {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.deal img {
+    width: 100%;
+    height: 100%;
+}
+
+#deal1 {}
+
+.deal-text {
+    max-width: 580px;
+    border-radius: 16px;
+
+    background: rgba(255, 255, 255, 0.80);
+    padding: 50px;
+
+
+}
+
+.deals-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.text1 {
+    position: absolute;
+    right: 50px;
+    top: calc(100% - 90%);
+}
+
+.text2 {
+    position: absolute;
+    left: 50px;
+    top: calc(100% - 90%);
+}
+
+.deal-text h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.btn-center {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* .newsletter */
+
+.newsletter {
+
+    width: 81.25%;
+    max-width: 1170px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    gap: 24px;
+
+}
+
+.newsletter-left {
+    flex: 1;
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+}
+
+.newsletter-left-title {
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.newsletter-left-des {
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.newsletter-right-tag {
+    border-radius: 16px;
+    background: #FF5400;
+    transform: rotate(-19.628deg);
+}
+
+.newsletter-hr {
+    height: 1px;
+    width: 100%;
+    margin: 24px auto;
+    background: rgba(19, 19, 24, 0.10);
+}
+
+.form input {
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    padding: 16px 0;
+    padding-left: 20px;
+    border: 0;
+
+    margin-bottom: 16px;
+}
+
+.subscribe-btn {
+    padding: 16px 0;
+    padding-left: 20px;
+    background: #FF5400;
+    border-radius: 8px;
+    border: 0;
+    margin-top: 16px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 800;
+    transition: all 1s;
+}
+
+.subscribe-btn:hover {
+    color: #FF5400;
+    background: #FFF;
+}
+
+.newsletter-right {
+    position: relative;
+    flex: 1;
+}
+
+.newsletter-right-tag {
+    text-align: center;
+    border-radius: 16px;
+    background: #FF5400;
+    transform: rotate(-19.628deg);
+    position: absolute;
+    padding: 20px 50px;
+    bottom: 20%;
+    right: 5%;
+
+}
+
+.newsletter-right-tag p {
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.newsletter-right-tag h4 {
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
 /* footer */
 footer {
     width: 100%;
@@ -196,14 +443,14 @@ footer {
     padding: 110px 0;
 }
 
-/* footer-container {} */
 
 footer p {
     width: 70%;
     margin: 0 auto;
 }
 
-.footer-heading {
+.footer-heading,
+.nav-title {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -224,6 +471,12 @@ footer p {
     font-weight: 800;
 }
 
+.nav-home {
+    color: #FF5400;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
 .hero {
     color: #131318;
     font-size: 2rem;
@@ -237,6 +490,13 @@ hr {
 
 /* responsive media query */
 @media screen and (max-width:600px) {
+    nav ul li {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
 
     .banner-dropdown {
         flex-direction: column;
@@ -305,7 +565,105 @@ hr {
         gap: 16px;
     }
 
+    /* ////////////////// */
+
+    .choose-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+
+    .destination-des,
+    .choose-des {
+        width: 100%;
+
+    }
+
+    /* deal setion */
+    .deals {
+        width: calc(100%-40px);
+        padding: 0 20px;
+        margin-bottom: 24px;
+    }
+
+    .choose-title {
+        font-size: 20px;
+    }
+
+    .orange {
+        font-size: 1.5rem;
+    }
+
+    .deal>img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .deal-text {
+        width: 80%;
+    }
+
+    .text1 {
+        /* margin: 0 auto;
+        bottom: 20px;
+        padding: 10px 20px;
+        top: 55px; */
+        right: 20px;
+        padding: 10px 20px;
+        top: 110px;
+    }
+
+    .text2 {
+        left: 20px;
+        padding: 10px 20px;
+        top: 110px;
+
+    }
+
+    .deals-icons {
+        flex-wrap: wrap;
+    }
+
+    .deals>p {
+        padding: 0 10px;
+    }
+
+
+    /* .newsletter */
+    .newsletter {
+        flex-direction: column;
+    }
+
+    .newsletter-right img {
+        width: 100%;
+    }
+
+    .newsletter-right-tag {
+        padding: 16px 30px;
+
+    }
+
+    .newsletter-right-tag p {
+        color: #FFF;
+        text-align: center;
+        font-family: Mulish;
+        font-size: 15.854px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .newsletter-right-tag h4 {
+        color: #FFF;
+        font-family: Mulish;
+        font-size: 21.138px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+
     /* footer */
+
+
     hr {
         margin: 24px auto;
     }
