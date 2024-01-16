@@ -578,6 +578,10 @@ hr {
         gap: 16px;
     }
 
+    .banner-btn {
+        width: 100%;
+    }
+
     .banner {
         width: calc(100%-40px);
         background-position: center;
