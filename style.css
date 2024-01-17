@@ -203,6 +203,19 @@ select {
     gap: 24px;
 }
 
+
+
+.destination-image .place-name {
+    position: relative;
+    bottom: 50%;
+
+}
+
+.place-name p {
+    font-size: 1.5rem;
+    color: #FFF;
+}
+
 .image-1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -686,23 +699,18 @@ hr {
     }
 
     .deal-text {
-        width: 82%;
+        width: 80%;
     }
 
     .text1 {
-        /* margin: 0 auto;
-        bottom: 20px;
-        padding: 10px 20px;
-        top: 55px; */
-        right: 20px;
-        padding: 10px 20px;
-        top: 110px;
+
+        padding: 10px;
+        left: 5%;
     }
 
     .text2 {
-        left: 20px;
-        padding: 10px 20px;
-        top: 110px;
+        left: 5%;
+        padding: 10px;
 
     }
 
